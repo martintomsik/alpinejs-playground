@@ -1,11 +1,17 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <title>Alpine.js playground</title>
+    <meta charset="utf-8" />
+    <script src="//unpkg.com/alpinejs" defer></script>
     <script src="script.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    <h1>Hello there!</h1>
-    <a href="/me.html">My other page</a>
+    <h1>Alpine.js is fast as ...</h1>
+    <div x-data="{ open: false }">
+      <button @click="open = true">Reveal</button>
+      <div x-show="open" class="answer">hell</div>
+    </div>
   </body>
 </html>

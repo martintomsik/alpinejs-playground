@@ -1,3 +1,7 @@
 body {
-  background: orange;
+  background: lightgray;
+}
+
+.answer {
+  font-size: xx-large;
 }
